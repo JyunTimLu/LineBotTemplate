@@ -1,7 +1,7 @@
 {
   "name": "LineBot",
   "description": "Line Bot",
-  "repository": "https://github.com/JyunTimLu/LineBotTemplate",
+  "repository": "https://github.com/JyunTimLug/LineBotTemplate",
   "keywords": ["Line", "go", "static"],
   "buildpacks": [
     {
