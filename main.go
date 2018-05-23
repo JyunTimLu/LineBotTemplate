@@ -51,7 +51,7 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 			case *linebot.TextMessage:
 				var emoji = "🙊🙊🙊🙊"
 				if message.Text == "安安" {
-					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(emoji+message.Text)).Do(); err != nil {
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(emoji+message.Text+event.Source.UserID)).Do(); err != nil {
 						log.Print(err)
 					}
 				} else {
